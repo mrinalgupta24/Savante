@@ -23,11 +23,6 @@ Savante is a Brand and Influencer Matching AI Platform. We are solving the bigge
 
 Once the development server is running, you can access the app by visiting http://localhost:3000 in your web browser. Here's how to use the app:
 
-1. View Home Page:
-Click on the "Home" button to access the home page of the website.
-
-2.Access Login Page:
-Click on the "Login" button to navigate to the login page.
-
-3.Access Sign-Up Page:
-Click on the "Join Us" button to be directed to the sign-up page.
+1. Click on the "Home" button to access the home page of the website.
+2. Click on the "Login" button to navigate to the login page.
+3. Click on the "Join Us" button to be directed to the sign-up page.
