@@ -6,6 +6,7 @@
   --text-light: #d1d5db;
   --white: #ffffff;
   --max-width: 1300px;
+  
 }
 
 * {
@@ -25,7 +26,7 @@ ul {
   list-style: none;
 }
 
-body {
+.App {
   font-family: "Poppins", sans-serif;
   background-image: url("bg2.jpg");
   background-position: center center;

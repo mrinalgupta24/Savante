@@ -6,24 +6,26 @@ import Login from "./components/Login/Login";
 import Signup from "./components/SignUp/Signup";
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-      </Routes>
-      
-      <Routes>
-        <Route exact path="/home" element={<Home />} />
-      </Routes>
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
 
-      <Routes>
-        <Route exact path="/login" element={<Login />} />
-      </Routes>
+        <Routes>
+          <Route exact path="/home" element={<Home />} />
+        </Routes>
 
-      <Routes>
-        <Route exact path="/signup" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route exact path="/login" element={<Login />} />
+        </Routes>
+
+        <Routes>
+          <Route exact path="/signup" element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
