@@ -20,8 +20,8 @@ Savante is a Brand and Influencer Matching AI Platform. We are solving the bigge
     ```
 
 ## Usage
-
-Once the development server is running, you can access the app by visiting http://localhost:3000 in your web browser. Here's how to use the app:
+ 
+Once the development server is running, you can access the app by visiting https://savante-rw5j.vercel.app/ or http://localhost:3000 in your web browser. Here's how to use the app:
 
 1. Click on the "Home" button to access the home page of the website.
 2. Click on the "Login" button to navigate to the login page.
