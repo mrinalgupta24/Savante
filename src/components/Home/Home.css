@@ -1,0 +1,125 @@
+.header__container {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-block: 5rem 2rem;
+    padding-inline: 1rem;
+    display: grid;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.header__image img {
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    display: flex;
+}
+
+.header__content {
+    overflow: hidden;
+    text-align: center;
+}
+
+.header__content h2 {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+
+}
+
+.header__content h2::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translate(calc(-100% - 1rem), -50%);
+    height: 2px;
+    width: 150%;
+    background-color: var(--white);
+}
+
+.header__content h1 {
+    margin: 0 auto;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 5rem;
+}
+
+.header__content h1 span {
+    display: block;
+}
+
+.h1__span-1 {
+    font-size: 3.8rem;
+    color: var(--primary-color);
+}
+
+.h1__span-2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.header__content p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.socials {
+    padding-block: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.socials li a {
+    display: flex;
+    font-size: 1.5rem;
+    color: var(--text-light);
+}
+
+.socials a:hover {
+    color: var(--primary-color);
+}
+
+.header__bar {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+
+}
+
+@media (width > 768px) {
+    .header__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding-block: 2rem;
+    }
+
+    .header__image {
+        grid-area: 1/2/2/3;
+    }
+
+    .header__content {
+        text-align: left;
+    }
+
+    .header__content h2 {
+        margin-left: 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .socials {
+        justify-content: flex-start;
+    }
+    .socials a:hover {
+        color: var(--primary-color);
+    }
+}

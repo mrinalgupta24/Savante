@@ -1,0 +1,274 @@
+/* Signup.css */
+
+:root {
+    --primary-color: #8d3fff;
+    --secondary-color: #212429;
+    --text-light: #d1d5db;
+    --white: #ffffff;
+    --background: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.login-box {
+    display: flex;
+    background: var(--text-light);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    height: 95vh;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: left;
+}
+
+.login-form h2 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.login-form p {
+    margin-bottom: 20px;
+    color: #131212;
+    font-weight: 500;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.switch button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.switch button.active {
+    border-bottom: 2px solid #000;
+}
+
+.underline {
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    background: #000;
+    transition: left 0.3s ease;
+}
+
+.Brand {
+    left: 0;
+    width: 50%;
+}
+
+.Influencer {
+    left: 50%;
+    width: 50%;
+}
+
+.input-group-signup {
+    margin-bottom: 15px;
+}
+
+.input-group-signup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group-signup input,
+.input-group-signup select,
+.input-group-signup textarea {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.input-group-signup input:last-child,
+.input-group-signup select:last-child,
+.input-group-signup textarea:last-child {
+    margin-right: 0;
+}
+
+.input-group-full {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group-full input,
+.input-group-full select,
+.input-group-full textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--text-light);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: small;
+}
+
+.tc-signup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 1rem;
+    font-size: small;
+}
+
+.tc-signup input {
+    margin-right: 5px;
+}
+
+.tc-signup u {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--text-light);
+    border-radius: 4px;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.social-login {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.google-signin,
+.facebook-signin {
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-signin span,
+.facebook-signin span {
+    margin-left: 10px;
+}
+
+.facebook-signin {
+    background: #3b5998;
+}
+
+.create-account {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.create-account a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+.login-image {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .login-box {
+        flex-direction: row;
+        
+    }
+    .login-form {
+        padding: 40px;
+    }
+
+    .login-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background: linear-gradient(45deg, #f3ec78, #af4261);
+    }
+
+    .login-image img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .input-group-signup input,
+    .input-group-signup select,
+    .input-group-signup textarea {
+        width: calc(50% - 10px);
+    }
+
+    .input-group-signup-full input,
+    .input-group-signup-full select,
+    .input-group-signup-full textarea {
+        width: 100%;
+    }
+}
